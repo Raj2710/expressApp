@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
+const cors = require('cors');
 const PORT = process.env.PORT || 3000
 var bodyParser = require('body-parser')
 app.use(bodyParser.json())
+app.use(cors());
 let details =  [{
     id:1,
     name:"Nagarajan",
